@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{ 
+    margin: 0;
+    padding: 0; 
+
+}
+html{
+    font-family: Montserrat, sans-serif;
+    font-size: calc(1em+1vw);
+}
+img{
+    max-width: 100%;
+}
+/* slutt globale stilregler */
+/* start stilregler for header og nav */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #232323;
+
+    #logo{
+        font-family: Inter;
+        font-weight: 900;
+        font-size: 1.5rem;
+        letter-spacing: -2px;
+    }
+    ul{
+        display: none;
+    }
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    #banner{
+        padding: 1rem; 
+        border-bottom: 1px solid #232323;
+        margin-bottom: 1rem;
+        h1{
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        button{
+            font-family: Montserrat;
+            font-size: 1.1rem;
+            font-weigth: 400;
+            border: none;
+            padding: 0.5rem 1rem;
+            background-color: #282828;
+            color: white;
+            border-radius: 9px;
+        }
+    }
+}
+#articles{
+    h2, p{
+        padding: 0.7rem;
+    }
+}
+aside{ 
+    display: flex; 
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1.5rem;
+    article{
+        display: flex;
+        gap: 2rem;
+
+        i{
+            font-size: 1.5rem;
+            &::before{
+                padding: 0.7rem;
+                border: 1px solid black;
+                border-radius: 50%;
+            }
+        }
+    }
+}
+footer{
+    display: none
+}
+
+
+@media only screen and (min-width: 650px){
+    header ul{
+        display: flex;
+        list-style: none;
+        gap: 1rem;
+    }
+    header nav{ 
+        display: flex;
+        gap: 1rem; 
+        align-items: center;
+        a{
+            text-decoration: none;
+            &:hover {
+                text-decoration:underline;
+
+                &::after {
+                    width: 100%
+
+                }
+            }
+        }
+    }
+    #hamburger{ 
+        display:none;
+    }
+}
