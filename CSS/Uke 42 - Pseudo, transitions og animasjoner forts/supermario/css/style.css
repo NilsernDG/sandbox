@@ -1,0 +1,95 @@
+body{ 
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+main{
+    background-image: url("../img/background.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 100%;
+    position: relative;
+
+}
+
+#supermario{
+    background-image: url("../img/sprites/stationary.png");
+    background-size: cover; 
+    height: 50px; 
+    width: 50px;
+    position: absolute; 
+    bottom: 53px;
+
+    animation-name: marioRun, marioMove, marioDie;
+    animation-duration: 0.2s, 3s, 0.1s;
+    animation-delay: 0, 0, 3.2;
+    animation-timing-function: linear;
+    animation-direction: none, normal;
+    animation-fill-mode: none, forwards, forwards;
+    animation-iteration-count: infinite;
+}
+#goomba{
+    background-image: url(../img/sprites/goomba.png);
+     background-size: cover; 
+    height: 50px; 
+    width: 50px;
+    position: absolute; 
+    bottom: 53px;
+    right: 0;
+}
+
+@keyframes marioRun {
+    from{
+        background-image: url("../img/sprites/stationary.png");
+    }
+    to{
+        background-image: url("../img/sprites/mariojump.png");
+    }
+    }
+
+@keyframes marioMove{
+0%{
+    transform: translate3d(0, 0, 0);
+}
+20%{
+    transform: translate3d(350px, 0, 0);
+
+}
+30%{
+    transform: translate3d(410px, -65px, 0);
+}
+40%{
+    transform: translate3d(410px, 0, 0);
+}
+50%{
+    transform: translate3d(410px, 0, 0);
+
+}
+70%{
+    transform: translate3d(600px, 0, 0);
+}
+80%{
+    transform: translate3d(610px, -75px, 0);
+
+}
+90%{
+    transform: translate3d(750px, 0, 0);
+
+}
+100%{
+    transform: translate3d(1100px, 0, 0);
+}
+}
+
+@keyframes marioDie{
+    from{ background-image: url("../img/sprites/stationary.png");
+
+    }
+    to{
+         background-image: url("../img/sprites/dead.png");
+    }
+}
