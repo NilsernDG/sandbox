@@ -7,22 +7,19 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-<a id="go-to-main" href="#main">Gå til hovedinnhold</a>
-
+	<a id="go-to-main" href="#main">Gå til hovedinnhold</a>
 	<header class="header">
-		<nav class="wrap header-inner">
+		<nav class="wrap header-inner" aria-label="hovedmeny">
 			<a class="logo" href="index.html">Twin Peaks</a>
 			<ul class="menu">
-				<li ><a class="menu-item active" href="index.html">Forside</a></li>
-				<li ><a class="menu-item" href="karakterer.html">Karakterer</a></li>
-				<li ><a class="menu-item" href="sesonger.html">Sesonger</a></li>
-				<li ><a class="menu-item" href="episoder.html">Episoder</a></li>
-				<li ><a class="menu-item" href="tilgjengelighet.html">Tilgjengelighet</a></li>
+				<li><a class="menu-item" aria-current="page" href="index.html">Forside</a></li>
+				<li><a class="menu-item" href="karakterer.html">Karakterer</a></li>
+				<li><a class="menu-item" href="sesonger.html">Sesonger</a></li>
+				<li><a class="menu-item" href="episoder.html">Episoder</a></li>
+				<li><a class="menu-item" href="tilgjengelighet.html">Tilgjengelighet</a></li>
 			</ul>
 		</nav>
 	</header>
-
 	<main id="main" class="content">
 		<section class="wrap">
 			<h1 class="page-title">Twin Peaks</h1>
@@ -43,7 +40,7 @@
 
 			<article class="quote">
 				<blockquote lang="en">
-					<p>"Diane, 11:30 a.m., February Twenty-fourth. Entering the town of Twin Peaks. Five miles south of the Canadian border, twelve miles west of the state line."</p>
+					<p>Diane, 11:30 a.m., February Twenty-fourth. Entering the town of Twin Peaks. Five miles south of the Canadian border, twelve miles west of the state line.</p>
 				</blockquote>
 				<br><br>
 				<span class="small">Agent Dale Cooper, i seriens første episode</span>
@@ -51,21 +48,24 @@
 
 			<h3>Utforsk</h3>
 			<aside class="cards">
-				<a class="card" href="karakterer.html">
-					<h4 class="card-title">Karakterer</h4>
+
+				<article class="card">
+				<h4 ><a  class="card-title" href="karakterer.html">Karakterer</a></h4>
 					<p>Møt agent Cooper, sheriff Truman, Laura Palmer og de andre innbyggerne i Twin Peaks.</p>
-					<span class="read-more">Les mer →</span>
-				</a>
-				<a class="card" href="sesonger.html">
-					<h4 class="card-title">Sesonger</h4>
+					
+					</article>
+
+					<article class="card">
+				<h4 ><a class="card-title" href="sesonger.html">Sesonger</a></h4>
 					<p>Fra den første sesongen i 1990 til The Return i 2017, og filmen imellom.</p>
-					<span class="read-more">Les mer →</span>
-				</a>
-				<a class="card" href="episoder.html">
-					<h4 class="card-title">Episoder</h4>
+					
+					</article>
+
+					<article class="card">
+				<h4 ><a class="card-title" href="episoder.html">Episoder</a></h4>
 					<p>Alle 48 episodene med tittel, regissør og dato for første sending.</p>
-					<span class="read-more">Les mer →</span>
-				</a>
+					
+					</article>
 			</aside>
 		</section>
 	</main>
